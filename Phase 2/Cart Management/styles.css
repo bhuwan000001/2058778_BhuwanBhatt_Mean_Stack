@@ -1,0 +1,93 @@
+section.latest-posts{
+    margin-top: 10px;
+}
+
+.blog-post {
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+
+.blog-post .post-thumbnail img {
+    margin-bottom: 10px;
+  }
+
+
+
+.form-label{
+    font-weight: bold;
+}
+
+.post{
+    border-style: solid;
+    margin-left: 10px;
+}
+.btn {
+    position: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.container2{
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  h1{
+    text-align: center;
+}
+  .myCheckout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+  }
+  {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }

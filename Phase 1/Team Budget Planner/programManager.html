@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="addProject.js"></script>
+
+<body>
+
+<h1>Program Managers</h1>
+<div class="links">
+    <h3>Add New Budget</h3>
+    <form id ="myform" onsubmit="store()"> 
+        <label for="ClientName">Client Name</label>
+        <input type="text" id="name" name="ClientName"><br><br>
+        <label for="ProjectName">Project Name</label>
+        <input type="text" id="projectName" name="ProjectName"><br><br>
+        <label for="budget">Budget</label>
+        <input type="text" id="budget" name="budget"><br><br>
+        <input type="button" onclick="location.href='Main.html';"value ="Back">
+        <input type="submit" value ="Add">
+        <button type="reset">Clear</button><br><br>
+
+      </form> 
+</div>
+
+
+</body>
+</html>

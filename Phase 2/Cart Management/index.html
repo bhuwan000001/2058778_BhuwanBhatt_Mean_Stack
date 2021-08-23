@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="add.js"></script>
+</head>
+
+<body>
+<h1>Shopping Cart</h1>
+    <div class="container">
+        <div id="cartSize">
+            <label>Cart Size:</label>
+        </div>
+            <div class="row">
+                <div class="col-sm-4 py-2">
+                    <div class="card h-100">
+                        <img src="images/img1.jpg"height="250px">
+                        <h3 id="lipstick">Name: Iphone</h3>
+                        <h3 id="lipstickPrice">Price:$900</h3>
+                        <button type="button" class="btn btn-primary" onclick="add('Iphone','900')">Add</button>
+                     </div>
+                </div>
+                <div class="col-sm-4 py-2">
+                    <div class="card h-100">
+                        <img src="images/img2.jpg" height="250px">
+                        <h3 id="lipstick">Name: Samsung</h3>
+                        <h3 id="lipstickPrice">Price:$800</h3>
+                        <button type="button" class="btn btn-primary" onclick="add('Samsung','800')">Add</button>
+                    </div>
+                </div>
+                <div class="col-sm-4 py-2">
+                    <div class="card h-100">
+                        <img src="images/img3.jpg" height="250px">
+                        <h3 id="lipstick">Name: Nokia</h3>
+                        <h3 id="lipstickPrice">Price:$500</h3>
+                        <button type="button" class="btn btn-primary" onclick="add('Nokia','500')">Add</button>
+                    </div>
+                </div>
+                <div class="col-sm-4 py-2">
+                    <div class="card h-100">
+                        <img src="images/img4.jpg"height="250px">
+                        <h3 id="lipstick">Name: MacBook</h3>
+                        <h3 id="lipstickPrice">Price:$1200</h3>
+                        <button type="button" class="btn btn-primary" onclick="add('MacBook','1200')">Add</button>
+                    </div>
+                </div>
+                <div class="col-sm-4 py-2">
+                        <div class="card h-100">
+                            <img src="images/img5.jpg"height="250px">
+                            <h3 id="lipstick">Name:Dell</h3>
+                            <h3 id="lipstickPrice">Price:$1200</h3>
+                            <button type="button" class="btn btn-primary" onclick="add('Dell','1200')">Add</button>
+                        </div>
+                </div>
+                <div class="col-sm-4 py-2">
+                        <div class="card h-100">
+                            <img src="images/img6.jpg"height="250px">
+                            <h3 id="lipstick">Name:HP</h3>
+                            <h3 id="lipstickPrice">Price:$1000</h3>
+                            <button type="button" class="btn btn-primary" onclick="add('HP','1000')">Add</button>
+                        </div>
+                </div>
+            </div>
+        <div class="myCheckout">
+            <input type="button" onclick="location.href='checkout.html'" value="Checkout" />
+        </div>
+</body>
+
+</html>

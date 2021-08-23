@@ -1,0 +1,25 @@
+
+  h2 {
+    color: blue;
+  }
+  p {
+    color: blue;
+  }
+  .myfirstdiv{
+      border: 2px solid blue;
+      margin: 50px;
+      text-align: center
+  }
+  .myseconddiv{
+    border: 2px solid blue;
+    margin: 50px;
+    padding: 120px;
+    font-size: 27px;
+    text-align: center 
+
+ }
+  .mythirddiv{
+    border: 2px solid blue;
+    margin: 50px;
+    text-align: center
+  }

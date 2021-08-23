@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+
+    <title>Simply Blogging</title>
+  </head>
+  <body>
+    <div class="container navigation pt-3">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <i class="fas fa-code fa-2x text-warning pb-3"></i>
+        </div>
+          <h1 class="d-inline pl-2 text-Black">Let's Blog</h1>
+        </div>
+        <div class="col-12 pt-4" >
+          <div class="row text-center p-0 d-flex justify-content-end align-items-right">
+            <div class="col-4">
+              <a href="#about" class="text-Blue navigation-link">Home</a>
+            </div>
+            <div class="col-4">
+              <a href="#projects" class="text-blue navigation-link">About Us</a>
+            </div>
+            <div class="col-4">
+              <a href="#social-media" class="text-blue navigation-link">Contacts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container mt-5 pt-5">
+
+      <h1 class="d-inline pl-2 text-Black"> Add Blog</h1>
+
+      <form>
+        <div class="form-group">
+          <label for="Title" class="text-primary">Title</label>
+          <input type="title" class="form-control" placeholder="Add Title">
+        
+          <label for="Article" class="text-primary">Article</label>
+          <input type="article" class="form-control" placeholder="Add Article">
+
+          <label for="img" class="text-primary">URL</label>
+          <input type="img" class="form-control" placeholder="Add Image URL">
+
+          
+
+      </div> 
+        <button type="submit" class="btn btn-primary">Submit</button>
+    
+      </form>
+    </br>
+
+
+      <div class="row">
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="Images/img1.jpg"
+              class="card-img-top"
+              style="height: 13rem;"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Inspiration</h5>
+              <p class="card-text">
+               "Life is all about reading."
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="Images/img2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sunset</h5>
+              <p class="card-text">
+               "One of the most beautiful thing in the world is to watch sunset."
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="Images/img3.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Flower</h5>
+              <p class="card-text">
+              "A beautiful gift to the human to make thier life happy."
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h5>
+          Copyright 2021 
+         
+        </h5>
+      </div>
+    </footer>
+  </body>
+</html>
