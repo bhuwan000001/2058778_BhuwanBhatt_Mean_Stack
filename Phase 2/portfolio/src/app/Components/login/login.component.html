@@ -1,0 +1,14 @@
+<div class="container">
+    <h4>Login Page</h4>
+    <form [formGroup]="loginRef" (ngSubmit)="checkUser()" class="form-group" style="align-items: center">
+        <label>UserName </label>
+        <input type="text" formControlName="user" class="form-control"/><br/><br>
+        <label>Password </label>
+        <input type="password" formControlName="pass" class="form-control"/><br/><br>
+        <input type="submit" value="Sign In!" class="btn btn-success"/>
+        <input type="button" value="Sign up" class="btn btn-success" (click)="btnClick()"/><br><br>
+        <input type="reset" value="reset" class="btn btn-info"/>
+    </form>
+    <br/>
+    <span style="color:red;">{{msg}}</span>
+</div>
