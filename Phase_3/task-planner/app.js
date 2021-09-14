@@ -65,7 +65,7 @@ let deleteTaskForm = `
 `
 let server = http.createServer((request, response) => {
     let urlInfo = url.parse(request.url, true);
-    //console.log(urlInfo);
+    console.log(urlInfo);
     if (urlInfo.pathname != "/favicon.ico") {
         if (urlInfo.pathname == "/addTaskRoute") {
             let taskObj = urlInfo.query;
@@ -96,15 +96,18 @@ let server = http.createServer((request, response) => {
             </tr>
             `
             for (data of taskList) {
-                tableContent += "<tr><td>" + data.empId + "</td><td>" + data.taskId + "</td><td>" + data.task + "</td><td>" + data.date + "</td></tr>"
+                tableContent += "<tr><td>" + data.employeeId + "</td><td>" + data.taskId + "</td><td>" + data.task + "</td><td>" + data.date + "</td></tr>"
 
             }
-            let endTable = "</table><br><a href='deleteTask'>Delete Task</a><a href='addTask'>Add Task</a>";
+            let endTable = "</table><br><a href='deleteTask'>Delete Task</a><br><a href='addTask'>Add Task</a><br><a href='back'>Back</a>";
             tableContent = startTable + tableContent + endTable;
             response.write(tableContent);
-        } else if (urlInfo.pathname == "/deleteTask") {
+        } else if (urlInfo.pathname == '/deleteTask') {
             response.write(deleteTaskForm);
-        } else if (urlInfo.pathname == "/deleteTaskRoute") {
+        }else if (urlInfo.pathname == '/back') {
+            response.write(addTask);
+        } 
+        else if (urlInfo.pathname == "/deleteTaskRoute") {
             let deleteTaskObj = urlInfo.query;
             let index = 0;
             for (let i = 0; i < taskList.length; i++) {
@@ -124,5 +127,5 @@ let server = http.createServer((request, response) => {
     }
     response.end();
 
-});
-server.listen(4000, () => console.log("Server running on port 9090"));
+})
+server.listen(4000, () => console.log("Server running on port 4000"));
